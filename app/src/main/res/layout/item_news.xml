@@ -1,0 +1,64 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    tools:context=".presentation.news.NewsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:paddingBottom="16dp">
+
+        <!-- ImageView for the image at the top -->
+        <ImageView
+            android:id="@+id/news_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop" />
+
+        <!-- TextView for the title -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingHorizontal="16dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="Congrats! You are featured on Home page as a recommended seller!"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- TextView for the subtitle or additional info -->
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingHorizontal="16dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="Hi rita12399, thank you for being awesome on Carousell! We want more Carousellers see you"
+            android:textColor="#757575"
+            android:textSize="14sp" />
+
+        <!-- TextView for the timestamp -->
+        <TextView
+            android:id="@+id/newsDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:paddingHorizontal="16dp"
+            android:text="5 hours ago"
+            android:textColor="#BDBDBD"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
