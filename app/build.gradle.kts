@@ -64,4 +64,20 @@ dependencies {
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.retrofit)
     implementation ("androidx.cardview:cardview:1.0.0")
+    // Mockito
+    testImplementation ("org.mockito:mockito-core:5.5.0")
+    androidTestImplementation ("org.mockito:mockito-android:5.5.0")
+
+    // JUnit for unit testing
+    testImplementation ("junit:junit:4.13.2")
+
+    // Coroutines testing
+    testImplementation ("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.1")
+
+    // AndroidX Test - Core testing libraries
+    testImplementation ("androidx.arch.core:core-testing:2.1.0")
+
+    // To run tests on the main thread
+    androidTestImplementation ("androidx.test:core:1.5.0")
+    androidTestImplementation ("androidx.test:runner:1.5.2")
     }

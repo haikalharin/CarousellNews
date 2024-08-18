@@ -15,4 +15,16 @@ fun NewsResponse.toNews(): News {
     )
 }
 
+fun News.toNewsResponse(): NewsResponse {
+    return NewsResponse(
+        id = id ?: "",
+        title = title ?: "",
+        description = description ?: "",
+        bannerUrl = bannerUrl ?: "",
+        rank = rank?:0,
+        timeCreated = timeCreated?:0
+
+    )
+}
+
 
