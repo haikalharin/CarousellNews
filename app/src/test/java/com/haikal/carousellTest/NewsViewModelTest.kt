@@ -107,8 +107,8 @@ class NewsViewModelTest {
     @Test
     fun `getNews should return failed state`() = runTest {
         // Arrange
-        val errorMessage = NetworkState.Failed.ByErrorMessage("Error occurred")
-        val failedState = ProcessState.Failed(NetworkState.Failed.ByErrorMessage("Error occurred"))
+        val errorMessage = NetworkState.Failed.ByTimeout
+        val failedState = ProcessState.Failed(NetworkState.Failed.ByTimeout)
         `when`(newsRepository.getNews()).thenReturn(failedState)
 
         // Act
